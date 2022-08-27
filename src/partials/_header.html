@@ -1,12 +1,22 @@
 <header class="header">
-    <div class="container header-container">
-        <nav class="nav">
-            <a href="" class="nav__logo">
-                <svg class="nav__icon" width="66" height="52">
+    <div class="header-container">
+        <nav class="nav-logo">
+            <a href="" class="nav-logo__logo">
+                <svg class="nav-logo__icon" width="66" height="52">
                     <use href="./images/header/icons.svg#icon-logo"></use>
                 </svg>
             </a>
         </nav>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-list__item list"><a class="nav-list__link--current link" href="">Home</a></li>
+                <li class="nav-list__item list"><a class="nav-list__link link" href="">About</a></li>
+                <li class="nav-list__item list"><a class="nav-list__link link" href="">Service</a></li>
+                <li class="nav-list__item list"><a class="nav-list__link link" href="">Menu</a></li>
+                <li class="nav-list__item list"><a class="nav-list__link link" href="">Contact</a></li>
+              </ul>
+       </nav>
+       <button class="button-header" type="submit">Order Now</button>
                       <!-- Mobile menu -->
         <button class="button-menu" type="button" aria-label="menu-open" data-menu-open>
             <svg class="button-menu__icon" width="28" height="28">
