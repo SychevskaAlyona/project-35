@@ -1,5 +1,4 @@
 .hero.section{
-    position: relative;
     @media (min-width:768px){
         padding: 60px 0;
     }
@@ -9,29 +8,31 @@
 
 }
 .hero__pic-box{
-    @media (min-width:768px){
-        position: absolute;
-        top:149px;
-        right:32px;
-    }
     @media (min-width:1280px){
         position: absolute;
-        top:14px;
+        top:0;
         right:30px;
+        transform: translateY(-145px);
+    }
+    @media (min-width:768px) and (max-width:1279px){
+        position: absolute;
+        top:0;
+        right:32px;
+        transform: translateY(89px);
+        
     }
     @media (max-width:767px){
         display: none;
     }
 }
 .hero.container{
+    position: relative;
     display: flex;
     align-items: flex-start;
-    margin-left: auto;
-    margin-right: auto;
+    width: 768px;
 
-    @media (min-width:768px){
-        margin-left: 0;
-        margin-right: 0;
+    @media (min-width: 1280px) {
+        width: 1280px;
     }
 }
 .hero.section-title{
