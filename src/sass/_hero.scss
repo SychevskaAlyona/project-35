@@ -105,6 +105,8 @@
         width: 48px;
         height: 40px;
     }
+    transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__btn--right{
     position: absolute;
@@ -127,12 +129,16 @@
         width: 48px;
         height: 40px;
     }
+    transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .hero__btn--right:hover,
 .hero__btn--right:focus,
 .hero__btn--left:hover,
 .hero__btn--left:focus{
     fill: #7EB101;
+    cursor: pointer;
 }
 .hero__btn--right:active,
 .hero__btn--left:active{
@@ -148,4 +154,25 @@
     width: 16px;
     height: 29px;
    }
+}
+.slider{
+    width: 580px;
+    height: 580px;
+    overflow: hidden;
+
+    @media (min-width:768px) and (max-width:1279px){
+    width: 292px;
+    height: 292px;
+    }
+}
+.slider-line {
+    width: 1740px;
+    height: 580px;
+    display: flex;
+    transition: all ease 1s;
+
+    @media (min-width:768px) and (max-width:1279px){
+    width: 876px;
+    height: 292px;
+    }
 }
