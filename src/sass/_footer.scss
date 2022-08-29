@@ -1,8 +1,45 @@
 .footer {
     background: #FEFEFE;
 box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+background-image: url(../images/footer/1x-lg-sp.png), url('../images/footer/apple-lg-91-widh.png'),url(../images/footer/1x-lg-sp2.png), url(../images/footer/1x-lg-lim.png),
+ url(../images/footer/1x-lg-sp3.png), url(../images/footer/1x-lg-sp4.png), url(../images/footer/1x-lg-apple2.png), url(../images/footer/1x-lg-ban.png);
+background-size: 95px,55px,104px,60px,65px,80px,75px,105px;
+background-position: 1% 25%,0% 23%,100% 0%,100% 5%, 30% 100%,73% 100%,38% 100%,55% 100%;
+background-repeat: no-repeat;
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    background-image: url(../images/footer/2x-lg-sp.png), url('../images/footer/apple-lg-182-widh.png'),url(../images/footer/2x-lg-sp2.png), url(../images/footer/2x-lg-lim.png),
+    url(../images/footer/1x-lg-sp3.png), url(../images/footer/2x-lg-sp4.png), url(../images/footer/2x-lg-apple2.png);
+
+  }
+  @media screen and (min-width: 768px) {
+ background-image: url(../images/footer/1x-tab-sp1.png), url(../images/footer/1x-lm-tab.png), url(../images/footer/1x-lm2-tab.png), url(../images/footer/1x-tab-sp2.png), url(../images/footer/1x-tab-sp3.png),
+ url(../images/footer/1x-apple-1.png), url(../images/footer/1x-apple-2.png), url(../images/footer/1x-ban-tab.png);
+ background-size: 203px,96px,184px,168px,171px,170px,168px,221px;
+ background-position: 100% 0%,100% 15,0% 100%,25% 100%,82% 100%,100% 100%,38% 100%,61% 100%;
+ @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    background-image: url(../images/footer/2x-tab-sp1.png), url(../images/footer/2x-lm-tab.png), url(../images/footer/2x-lm2-tab.png), url(../images/footer/2x-tab-sp2.png), url(../images/footer/2x-tab-sp3.png),
+    url(../images/footer/2x-apple-1.png), url(../images/footer/2x-apple-2.png), url(../images/footer/2x-ban-tab.png);
+}
+}
+@media screen and (min-width: 1280px) {
+background-image: url(../images/footer/1x-lm1-pc.png), url(../images/footer/1x-sp1-pc.png), url(../images/footer/1x-sp2-pc.png), url(../images/footer/1x-sp3-pc.png),
+url(../images/footer/1x-lm2-pc.png), url(../images/footer/1x-apple-pc.png), url(../images/footer/1x-apple2-pc.png), url(../images/footer/1x-ban-pc.png);
+   background-size: 196px,178px,526px,182px,380px,163px,181px,235px;
+   background-position: 5% 100%,20% 100%,40% 100%,86% 100%,50% 100%,28% 100%,99% 100%,75% 100%;
+   @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    background-image: url(../images/footer/2x-lm1-pc.png), url(../images/footer/2x-sp1-pc.png), url(../images/footer/2x-sp2-pc.png), url(../images/footer/2x-sp3-pc.png),
+url(../images/footer/2x-lm2-pc.png), url(../images/footer/2x-apple-pc.png), url(../images/footer/2x-apple2-pc.png), url(../images/footer/2x-ban-pc.png);
+}
+  }
 }
 .footer-container {
+  
     @media screen and (min-width: 1280px) {
         display: flex;
         align-items: baseline
@@ -91,9 +128,13 @@ margin-bottom: 12px;
     background-color: #FFE550;
 }
 .food-sta{
+    margin-top: 60px;
     @media screen and (min-width: 768px) {
         display: flex;
             }
+            @media screen and (min-width: 768px) {
+                margin-top: 80px;
+                     }
 }
 .subscribe {
     font-weight: 400;
@@ -109,16 +150,12 @@ color: #7EB101;
 }
 .policy {
     display: flex;
-    margin-top: 60px;
     gap: 33px;
     margin-bottom: 40px;
     @media screen and (min-width: 768px) {
     gap: 20px;
     margin-bottom: 0;
         }
-        @media screen and (min-width: 768px) {
-           margin-top: 80px;
-                }
 }
 .food {
     display: flex;
