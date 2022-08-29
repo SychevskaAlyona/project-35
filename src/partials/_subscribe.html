@@ -1,32 +1,46 @@
 <section class="section subscribe__section">
   <div class="container container__subscribe">
     <div class="subscribe__content">
-      <h2 class="section-title subscribe__title">Subscribe To Get Special Offers</h2>
+      <h2 class="section-title subscribe__title">
+        Subscribe To Get Special Offers
+      </h2>
       <p class="subscribe__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim <br>in eros elementum tristique.
+        varius enim <br />in eros elementum tristique.
       </p>
       <form class="subscribe__form">
         <label class="form__group">
-            <input class="form__input" type="email" placeholder="Enter your email"/>
+          <input
+            class="form__input"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+          <svg class="form__icon" width="12" height="12">
+            <use class="icon__eror" href="./images/icon-svg.svg#Frame"></use>
+          </svg>
+          <span class="form__notfication"
+            >Not a valid email address (example@email.com)</span
+          >
         </label>
-      <button class="subscribe__btn" type="submit">Subscribe</button>
-    </form>
+        <button class="subscribe__btn" type="submit">Subscribe</button>
+      </form>
     </div>
     <div class="subscribe__img">
-        <img
-        srcset="./images/subscribe/banan-mob.png 280w,
-        ./images/subscribe/banan-mob-ret.png 560w,
-        ./images/subscribe/banan-tab.png 281w,
-        ./images/subscribe/banan-tab-ret.png 562w,
-        ./images/subscribe/banan-desk.png 608w,
-        ./images/subscribe/banan-desk-ret.png 1216w
+      <img
+        srcset="
+          ./images/subscribe/banan-161.png 161w,
+          ./images/subscribe/banan-322.png 322w,
+          ./images/subscribe/banan-281.png 281w,
+          ./images/subscribe/banan-562.png 562w,
+          ./images/subscribe/banan-546.png 546w,
+          ./images/subscribe/banan-1092.png 1092w
         "
-        sizes="(min-width: 1280px) 608px, (min-width: 768px) 281px, (min-width: 480px) 280px"
-        src="./images/subscribe/banan-desk.png"
+        sizes="(min-width: 1280px) 546px, (min-width: 768px) 281px, (min-width: 480px) 161px"
+        src="./images/subscribe/banan-546.png"
         alt="банан"
-        width="608"
-        />
+        width="546"
+      />
     </div>
   </div>
 </section>
