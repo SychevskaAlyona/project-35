@@ -17,12 +17,17 @@
             placeholder="Enter your email"
             required
           />
-          <svg class="form__icon" width="12" height="12">
-            <use class="icon__eror" href="./images/subscribe/icon-eror.svg#eror"></use>
-          </svg>
-          <span class="form__notfication"
-            >Not a valid email address (example@email.com)</span
-          >
+          <div class="eror__group">
+            <svg class="form__icon" width="12" height="12">
+              <use
+                class="icon__eror"
+                href="./images/subscribe/icon-eror.svg#eror"
+              ></use>
+            </svg>
+            <span class="form__notfication"
+              >Not a valid email address (example@email.com)</span
+            >
+          </div>
         </label>
         <button class="subscribe__btn" type="submit">Subscribe</button>
       </form>

@@ -66,18 +66,17 @@
   }
 }
 
-.form__input:invalid:required:not(:placeholder-shown) ~ .form__notfication {
-  opacity: 1;
-}
-
-
-.icon__eror {
-  fill: #ff705d;
+.eror__group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  gap: 4px;
+  margin-top: 4px;
   opacity: 0;
 }
-.form__input:invalid:required:not(:placeholder-shown)
-  ~ .form__icon
-  .icon__eror {
+
+.form__input:invalid:required:not(:placeholder-shown) ~ .eror__group {
   opacity: 1;
 }
 
@@ -89,15 +88,13 @@
 }
 
 .form__notfication {
-  // position: absolute;
-  opacity: 0;
   font-size: 10px;
   color: #ff705d;
   text-align: center;
-  
-@media screen and (min-width: 768px) {
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+
+  @media screen and (min-width: 768px) {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .subscribe__img {
