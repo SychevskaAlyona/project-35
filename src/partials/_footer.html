@@ -30,7 +30,21 @@
         <h4 class="footer-form__text">Subscribe</h4>
         <span class="footer-wrp">
           <label class="footer-label">
-            <input class="footer-label__input" type="email" placeholder="Enter your email">
+            <input
+            class="form__input"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+            <div class="eror__group">
+              <svg class="form__icon" width="12" height="12">
+                <use
+                  class="icon__eror"
+                ></use>
+              </svg>
+              <span class="form__notfication"
+                >Not a valid email address (example@email.com)</span>
+            </div>  
           </label>
           <button class="footer-btn" type="submit">Subscribe</button>
         </span>

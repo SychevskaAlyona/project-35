@@ -73,6 +73,11 @@ url(../images/footer/2x-lm2-pc.png), url(../images/footer/2x-apple-pc.png), url(
     color: #000000;
     overflow: hidden;
   }
+  .nav-footer-list__link:hover,
+.nav-footer-list__link:focus {
+  text-decoration: underline;
+  color: #bbf330;
+}
 //   footer-form
 .footer-form {
     display: block;
@@ -86,6 +91,11 @@ url(../images/footer/2x-lm2-pc.png), url(../images/footer/2x-apple-pc.png), url(
         margin-left: auto;
       }
 }
+.footer-wrp {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
 .footer-form__text {
     font-weight: 600;
 font-size: 14px;
@@ -96,18 +106,37 @@ margin-bottom: 12px;
 .footer-label {
     display: block;
 }
-.footer-label__input {
+.form__input {
+    background-color: #fefefe;
+    border: 0.854167px solid #ffe550;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #505050;
+    padding: 12px;
+    outline: none;
     width: 279px;
-background-color: #FFFFFF;
-border: 0.854167px solid #FFE550;
-border-radius: 30px;
-padding: 12;
-}
-.footer-wrp {
-    @media screen and (min-width: 768px) {
-        display: flex;
-    }
-}
+}  
+.eror__group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start;
+    gap: 4px;
+    margin-top: 4px;
+    opacity: 0;
+  } 
+  .form__input:invalid:required:not(:placeholder-shown) ~ .eror__group {
+    opacity: 1;
+  }
+  
+  .form__input:required:valid:not(:placeholder-shown) {
+    border-color: #7eb101;
+  }
+  .form__input:required:invalid:not(:placeholder-shown) {
+    border-color: #ff705d;
+  }
 .footer-btn {
     display: flex;
     margin-top: 20px;
@@ -120,7 +149,6 @@ transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 768px) {
 margin-top: 0;
 margin-left: 13px;
-margin-bottom: 12px;
 }
 }
 .footer-btn:hover,
