@@ -1,9 +1,12 @@
 .subscribe__section {
-    margin-top: -70px;
-   margin-right: 20px;
-    margin-left: 20px;
-margin-bottom: 60px;
-
+    margin-top: -130px;
+    
+  @media screen and (min-width: 768px) {
+    margin-top: -173px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: -175px;
+  }
     // background-color: var(--main-bcg-cl);
   }
   .subscribe__title {
